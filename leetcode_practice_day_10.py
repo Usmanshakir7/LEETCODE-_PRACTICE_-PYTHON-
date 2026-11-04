@@ -3,13 +3,13 @@
 
 # Given this list:
 
-#numbers = [2, 4, 6, 8, 10]
+numbers = [2, 4, 6, 8, 10]
 
 # Tasks:
 # 1. Create a list of squares using list comprehension.
-#square =[num**2 for num in numbers]
+square =[num**2 for num in numbers]
 # 2. Print the new list.
-#print("square of each num is :",square)
+print("square of each num is :",square)
 
 
 # Filter Even Numbers
@@ -55,3 +55,20 @@ print("cubes of numbers ",dict)
 # 2. Create a dictionary containing only even numbers and their squares.
 dict2 = {num :num**2 for num in numbers if num%2==0 }
 print(dict2)
+
+
+# Exercise 5 — Challenge
+# Word Length Analyzer
+words = ["python", "data", "science", "AI", "programming"]
+
+
+# Tasks:
+# 1. Create a list containing the length of each word.
+length = [len(word) for word in words]
+print("lenght of each word :",length)
+# 2. Create a list of words having more than 4 characters.
+four_char = [word for word in words if len(word)>4]
+print("words having more than 4 characters",four_char)
+# 3. Create a dictionary where each word is the key and its length is the value.
+dict3 = {word:len(word) for word in words}
+print("each word key and its length :",dict3)
