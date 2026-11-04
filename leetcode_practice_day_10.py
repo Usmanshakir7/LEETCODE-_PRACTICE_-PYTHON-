@@ -42,3 +42,16 @@ print("c grade :",c_grade)
 # 3. Add 5 bonus marks to every student using list comprehension.
 grace_marks= [grace+5 for grace in marks]
 print("5 geace marks",grace_marks)
+
+
+# Exercise 4 — Intermediate
+# Dictionary Comprehension
+numbers = [1, 2, 3, 4, 5, 6]
+
+# Tasks:
+# 1. Create a dictionary where keys are numbers and values are cubes.
+dict ={num:num**3 for num in numbers}
+print("cubes of numbers ",dict)
+# 2. Create a dictionary containing only even numbers and their squares.
+dict2 = {num :num**2 for num in numbers if num%2==0 }
+print(dict2)
