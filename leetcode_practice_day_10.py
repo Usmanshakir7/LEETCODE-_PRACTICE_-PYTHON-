@@ -23,5 +23,22 @@ even_no = [num for num in numbers if num%2 == 0]
 # 2. Extract only odd numbers.
 odd_no = [num for num in numbers if num%2 != 0]
 # 3. Print both lists.
-print("even no are ",even_no)
-print("odd no are ",odd_no)
+print("even no are :",even_no)
+print("odd no are :",odd_no)
+
+
+# Exercise 3 — Intermediate
+# Student Marks Analyzer
+
+marks = [45, 78, 90, 32, 88, 67, 95]
+
+# Tasks:
+# 1. Create a list of marks greater than or equal to 80.
+A_grade = [i for i in marks if i>=80]
+print("a grade :",A_grade)
+# 2. Create a list of marks below 50.
+c_grade = [i for i in marks if i<=50]
+print("c grade :",c_grade)
+# 3. Add 5 bonus marks to every student using list comprehension.
+grace_marks= [grace+5 for grace in marks]
+print("5 geace marks",grace_marks)
