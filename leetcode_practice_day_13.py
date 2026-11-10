@@ -38,19 +38,17 @@ class bankaccount:
         self.balance+= amount
         print(f"the amount of {amount} has been deposit in your account balance")
 
-    def withdraw(self,amount):
-        self.balance-= amount 
-        self.amount = amount  
-# 4. Prevent withdrawing more than the available balance.
-        if self.amount >= self.balance and self.balance > 0:
-            print(f"the amount of {amount} has been withdraw from your account balance")
-        else:     
-            print("not enough balance")
+    def withdraw(self, amount):
+     if amount <= self.balance:
+      self.balance -= amount  # Deducts the amount from the balance
+      print(f"The amount of {amount} has been withdrawn from your account.")
+     else:
+      print("Not enough balance.")
 # 5. Display the final balance.
     def display_balance(self):
         print(f"the curreant balance of {self.owner} is :",self.balance)
 
-a1=bankaccount("usman",0)
+a1=bankaccount("usman",3330)
 a1.deposit(2000)
 a1.withdraw(2000)
 a1.withdraw(3000)
