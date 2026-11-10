@@ -19,8 +19,7 @@ file = open("student.txt", "r")
     
 # 2. Read the complete content.
 content = file.read()
-
+file.close()
 # 3. Print it.
 print(content)
-# 4. Read the file line by line.
-print(file.readline())
+
