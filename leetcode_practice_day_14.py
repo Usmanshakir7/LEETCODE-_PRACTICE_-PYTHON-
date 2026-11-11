@@ -23,3 +23,22 @@ s1.display()
 s2.display()
 s3.display()
 #  Concepts: Class variables, instance variables, constructor.
+
+
+# Student Counter
+# 1. Create a Student class.
+class student:
+# 2. Add a class variable total_students = 0.
+    total_students = 0
+# 3. Increment total_students whenever a new object is created.
+    def __init__(self):
+        student.total_students+=1
+        
+# 4. Create a class method show_total_students().
+    @classmethod
+    def show_total_students(cls):
+        print("total_students :",cls.total_students)
+# 5. Create five student objects and display the total count.
+student()
+student()
+student.show_total_students()
