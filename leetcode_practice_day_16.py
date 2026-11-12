@@ -33,22 +33,22 @@ class employee:
     def __init__(self,name,salary):
         self.name = name
         self.salary = salary
-    def display_info(self):
-        print("name:",self.name)
-        print("salary:",self.salary)   
+    # def display_info(self):
+    #     print("name:",self.name)
+    #     print("salary:",self.salary)   
 
 class manager(employee):
-    def __inti__(self,name,salary,department):
+    def __init__(self,name,salary,department):
         super().__init__(name,salary)   
         self.department= department 
 
     def manager_info(self):
         print("name:",self.name)
         print("salary:",self.salary) 
-        print("depatment: ",self.department) 
+        print("department: ",self.department) 
 
 
-m1 =manager("usman",22000,"datascience")     
+m1 = manager("usman",22000,"data science")     
 m1.manager_info()       
 # Requirements:
 # 1. Employee should have name and salary.
