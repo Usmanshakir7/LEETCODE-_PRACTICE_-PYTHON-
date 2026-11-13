@@ -29,3 +29,5 @@ def main():
     crack(message)
 if __name__ == "__main__":
     main()
+
+#FUN GAME
