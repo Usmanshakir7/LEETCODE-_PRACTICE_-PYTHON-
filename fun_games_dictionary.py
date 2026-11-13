@@ -1,5 +1,5 @@
 
-
+#fun game using dictionary
 def build_emoji_dict():
     emoji_dict = {}
     word = input("Word: ").lower()
