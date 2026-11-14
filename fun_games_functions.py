@@ -26,7 +26,9 @@ def crack(message):
 def main():
     print("Welcome to the Code Machine!")
     message =input("Enter a message: ")
-    crack(message)
+    no = int(input ("enter the no shifts :"))
+    encode_message =encode(message,no)
+    print("enocoded message :",encode_message)
 if __name__ == "__main__":
     main()
 
