@@ -8,6 +8,5 @@ def count_vowels(text):
             count+=1
     print(f"the total vowels in text {count} ")
     return count
-
 count_vowels("usmanshakir")        
 
