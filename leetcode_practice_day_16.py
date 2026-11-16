@@ -29,6 +29,13 @@ s1.study("data")
 
 
 # Create a parent class Employee and a child class Manager.
+# Requirements:
+# 1. Employee should have name and salary.
+# 2. Create a method display_info() in Employee.
+# 3. Manager should inherit from Employee.
+# 4. Add a new attribute department to Manager.
+# 5. Use super().__init__() to initialize the inherited attributes.
+# 6. Create a method manager_info() that displays all three attributes.
 class employee:
     def __init__(self,name,salary):
         self.name = name
@@ -50,10 +57,3 @@ class manager(employee):
 
 m1 = manager("usman",22000,"data science")     
 m1.manager_info()       
-# Requirements:
-# 1. Employee should have name and salary.
-# 2. Create a method display_info() in Employee.
-# 3. Manager should inherit from Employee.
-# 4. Add a new attribute department to Manager.
-# 5. Use super().__init__() to initialize the inherited attributes.
-# 6. Create a method manager_info() that displays all three attributes.
