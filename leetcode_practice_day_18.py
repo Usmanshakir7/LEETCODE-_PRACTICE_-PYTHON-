@@ -36,6 +36,6 @@ def reverse():
     for i in range(n-1,-1,-1):
      rlist.append(numbers[i])
     return rlist
-reverse()
+print(reverse())
 
 
