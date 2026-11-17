@@ -40,7 +40,47 @@ def linear_search(numbers, target):
 
 result = linear_search(numbers, target)
 
-if result == -1:
-    print("Target is not found")
-else:
-    print("Target found at index:", result)
+# if result == -1:
+#     print("Target is not found")
+# else:
+#     print("Target found at index:", result)
+#time complexity O(n).
+# 
+
+
+# Problem 3 — Count Occurrences Using Linear Search
+# Medium Difficulty
+# Topics: Arrays, Linear Search, Loops, Functions
+# Problem Statement
+# Given a list of numbers and a target value, find how many times the target appears and at which indices.
+numbers = [10, 20, 30, 20, 40, 20, 50]
+target = 20
+# Your Tasks
+# 1. Create a function count_occurrences(numbers, target).
+# 2. Use a for loop to traverse the list.
+# 3. Count how many times the target appears.
+# 4. Store all matching indices in a separate list.
+# 5. Print the matching indices and return the total count.
+# 6. If the target doesn't exist, return 0.
+
+def count_occurrences(numbers, target):
+    count = 0
+    index = []
+    for i in range(len(numbers)):
+      if target == numbers[i]:
+          index.append(i)
+          count+=1
+    return count,index
+
+
+
+numbers = [10, 20, 30, 20, 40, 20, 50]
+target = 20
+
+result = count_occurrences(numbers, target)
+count, indices = count_occurrences(numbers, target)
+
+print("target",target)
+print("Total occurrences:", count)
+print("Found at indices:", indices) 
+
