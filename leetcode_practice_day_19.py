@@ -84,3 +84,4 @@ print("target",target)
 print("Total occurrences:", count)
 print("Found at indices:", indices) 
 
+#time complexity is O(n).
