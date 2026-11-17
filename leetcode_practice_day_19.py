@@ -14,7 +14,7 @@ def largest():
             
     return largest_no
 
-print("largest no is", largest())
+# print("largest no is", largest())
 
 def smallest ():
     smallest_no = numbers[0]
@@ -24,4 +24,23 @@ def smallest ():
     return smallest_no
 
 
-print("smallest no is",smallest())
+# print("smallest no is",smallest())
+
+
+# Problem 2 — Linear Search (Medium)
+numbers = [10, 25, 30, 45, 60, 75, 90]
+target = 60
+# Tasks:
+def linear_search(numbers, target):
+
+    for i in range(len(numbers)):
+        if target == numbers[i]:
+            return i
+    return -1
+
+result = linear_search(numbers, target)
+
+if result == -1:
+    print("Target is not found")
+else:
+    print("Target found at index:", result)
