@@ -14,7 +14,7 @@ def largest():
             
     return largest_no
 
-# print("largest no is", largest())
+print("largest no is", largest())
 
 def smallest ():
     smallest_no = numbers[0]
@@ -24,7 +24,7 @@ def smallest ():
     return smallest_no
 
 
-# print("smallest no is",smallest())
+print("smallest no is",smallest())
 
 
 # Problem 2 — Linear Search (Medium)
@@ -40,12 +40,12 @@ def linear_search(numbers, target):
 
 result = linear_search(numbers, target)
 
-# if result == -1:
-#     print("Target is not found")
-# else:
-#     print("Target found at index:", result)
+if result == -1:
+    print("Target is not found")
+else:
+    print("Target found at index:", result)
 #time complexity O(n).
-# 
+
 
 
 # Problem 3 — Count Occurrences Using Linear Search
