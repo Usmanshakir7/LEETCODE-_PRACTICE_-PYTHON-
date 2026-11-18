@@ -12,8 +12,34 @@ def middle():
     index =numbers.index(mid)
     return mid,index
 mid,index = middle()
-print("middle value is :",mid)
-print("middle value index is :",index)
+# print("middle value is :",mid)
+# print("middle value index is :",index)
 
 
 
+# Problem 2 — Medium
+# Implement Binary Search
+numbers = [10, 20, 30, 40, 50, 60, 70, 80]
+target = 100
+# Tasks:
+# 1. Create binary_search(numbers, target).
+# 2. Use a while loop.
+# 3. Calculate mid in each iteration.
+# 4. Update low or high based on comparisons.
+# 5. Return the target's index, or -1 if absent.
+
+def binary_search(numbers,target):
+    low = 0
+    high = len(numbers) - 1
+   
+    while low <= high:
+        mid = (low + high) // 2
+        if numbers[mid] < target:
+            low = mid + 1
+        elif numbers[mid] > target:
+            high = mid - 1
+        elif numbers[mid] == target:
+            return mid
+    return -1
+print(binary_search(numbers,target))
+        
