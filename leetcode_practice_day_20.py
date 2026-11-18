@@ -12,8 +12,8 @@ def middle():
     index =numbers.index(mid)
     return mid,index
 mid,index = middle()
-# print("middle value is :",mid)
-# print("middle value index is :",index)
+print("middle value is :",mid)
+print("middle value index is :",index)
 
 
 
@@ -49,10 +49,7 @@ print(binary_search(numbers,target))
 # Topics: Binary Search, Arrays, Loops, Time Complexity
 # Problem Statement
 # You are given a sorted list containing duplicate numbers. Your task is to find the index of the first occurrence of a target using binary search.
-numbers = [10, 20, 20, 20, 30, 40, 50]
-target = 20        
-
-def First_occurrence(numbers,target):
+def first_occurrence(numbers,target):
     low = 0
     high = len(numbers) - 1
     result = -1
@@ -68,12 +65,12 @@ def First_occurrence(numbers,target):
 
         else:
             result = mid
-            high = 
+            high = mid - 1
 
     return result
 
 
-numbers = [10, 20, 20, 20, 30, 40, 50]
-target = 20
+numbers = [10, 10, 10, 20, 30, 40, 50]
+target = 10
 
 print(first_occurrence(numbers, target))
