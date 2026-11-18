@@ -42,4 +42,38 @@ def binary_search(numbers,target):
             return mid
     return -1
 print(binary_search(numbers,target))
-        
+
+
+# Problem 3: Find the First Occurrence Using Binary Search
+# Medium Difficulty
+# Topics: Binary Search, Arrays, Loops, Time Complexity
+# Problem Statement
+# You are given a sorted list containing duplicate numbers. Your task is to find the index of the first occurrence of a target using binary search.
+numbers = [10, 20, 20, 20, 30, 40, 50]
+target = 20        
+
+def First_occurrence(numbers,target):
+    low = 0
+    high = len(numbers) - 1
+    result = -1
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if numbers[mid] < target:
+            low = mid + 1
+
+        elif numbers[mid] > target:
+            high = mid - 1
+
+        else:
+            result = mid
+            high = 
+
+    return result
+
+
+numbers = [10, 20, 20, 20, 30, 40, 50]
+target = 20
+
+print(first_occurrence(numbers, target))
