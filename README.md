@@ -99,4 +99,4 @@ This is an active learning repository, so some examples may be unfinished or nee
 **Usman Shakir**  
 BS Data Science Undergraduate
 
-[GitHub](https://github.com/Usmanshakir7)
+[GitHub](https://github.com/Usmanshakir7) | [LinkedIn](https://www.linkedin.com/in/usman-shakir7/)
